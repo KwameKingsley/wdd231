@@ -3,9 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231</title>
+    <title>WDD 231 - Web Frontend Development - Kingsley Kwarteng</title>
+    <meta name="description" content="WDD 231 - Web Frontend Development - Kingsley Kwarteng">
+    <meta name="author" content="Kingsley Kwarteng">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/index.js" defer></script>
+
+
 </head>
 <body>
-    <h1>WDD 231 - Kingsley</h1>
+    <header>
+      <div class="profile">
+        <img src="images/image1.jpg" alt="Kwarteng Kingsley">
+        <h1>Kingsley Kwarteng</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="https://byui-cse.github.io/wdd231-ww-course/week01/chamber-site-plan.html" target="_blank" data-text="Chamber">Chamber</a></li>
+          <li><a href="https://github.com/KwameKingsley/wdd231" target="_blank" data-text="GitHub">GitHub Profile</a></li>
+          <li><a href="https://www.linkedin.com/in/kwartkingsley/" target="_blank" data-text="LinkedIn">LinkedIn</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+      <div class="course-location">
+        <section class="coursework">
+          <h2>Course Work</h2>
+          <p>• Java Script • GitHub  • HTML <br>• Python<br>• C# </p>
+        </section>
+  
+        <section class="location">
+          <h2>Accra, Ghana</h2>
+          <img src="images/blackstarsquare.webp" alt="Independence Square">
+          <p>Independence Square</p>
+        </section>
+      </div>
+      
+      <section class="certificate">
+        <h2>Web and Computer Programming Certificate</h2>
+        <div class="filter">
+          <button>All</button>
+          <button>CSE</button>
+          <button>WDD</button>
+        </div>
+        <div class="courses">
+          <button>CSE 110</button>
+          <button>WDD 130</button>
+          <button>CSE 111</button>
+          <button>CSE 210</button>
+          <button>WDD 131</button>
+          <button>WDD 231</button>
+
+        </div>
+      </section>
+    </main>
+  
+    
+    <footer>
+        <p>&copy; <span id="currentYear"></span> <br> Kingsley Kwarteng <br> Accra, Ghana </p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
