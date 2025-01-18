@@ -1,0 +1,23 @@
+{
+    "family_name": "Kwarteng",
+    "move_in_date": "2025-01-13",
+    "number_in_the_family": 3,
+    "visited_by_bishopric": true,
+    "family_members": [
+        {
+            "name": "Kingsley Kwarteng",
+            "gender": "Male",
+            "birthdate": "1998-10-31"
+        },
+        {
+            "name": "Joyce Kwarteng",
+            "gender": "Female",
+            "birthdate": "2000-10-26"
+        },
+        {
+            "name": "Kofi Kwarteng",
+            "gender": "Male",
+            "birthdate": "2002-02-14"
+        }
+    ]
+}

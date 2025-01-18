@@ -13,68 +13,59 @@
     <meta property="og:image" content="https://media.istockphoto.com/id/1556459503/photo/aerial-of-ghana-accra-black-star-gate.jpg?s=2048x2048&w=is&k=20&c=5KUzJblX7kMMx93tUp0doJ_2Po385DHdMYrf01pa-u4=">
     <meta property="og:url" content="https://kwamekingsley.github.io/wdd231/">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" defer></script>
-
-
 </head>
 <body>
     <header>
-      <div class="profile">
-        <img src="images/image1.jpg" alt="Kwarteng Kingsley">
-        <h1>Kingsley Kwarteng</h1>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="https://byui-cse.github.io/wdd231-ww-course/week01/chamber-site-plan.html" target="_blank" data-text="Chamber">Chamber</a></li>
-          <li><a href="https://github.com/KwameKingsley/wdd231" target="_blank" data-text="GitHub">GitHub Profile</a></li>
-          <li><a href="https://www.linkedin.com/in/kwartkingsley/" target="_blank" data-text="LinkedIn">LinkedIn</a></li>
-        </ul>
-      </nav>
+        <div class="profile">
+            <img src="images/image1.jpg" alt="Kwarteng Kingsley">
+            <h1>Kingsley Kwarteng</h1>
+        </div>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="https://byui-cse.github.io/wdd231-ww-course/week01/chamber-site-plan.html" target="_blank">Chamber</a></li>
+                <li><a href="https://github.com/KwameKingsley/wdd231" target="_blank">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/kwartkingsley/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </nav>
     </header>
-    
-    <main>
-      <div class="course-location">
-        <section class="coursework">
-          <h2>Course Work</h2>
-          <p>• Java Script • GitHub  • HTML <br>• Python<br>• C# </p>
-        </section>
-  
-        <section class="location">
-          <h2>Accra, Ghana</h2>
-          <img src="images/GhArc.jpg" alt="Independence Square">
-          <p>Independence Square</p>
-        </section>
-      </div>
-      
-      <section class="certificate">
-        <h2>Web and Computer Programming Certificate</h2>
-        <div class="filter">
-          <button>All</button>
-          <button>CSE</button>
-          <button>WDD</button>
-        </div>
-        <div class="courses">
-          <button>CSE 110</button>
-          <button>WDD 130</button>
-          <button>CSE 111</button>
-          <button>CSE 210</button>
-          <button>WDD 131</button>
-          <button>WDD 231</button>
 
+    <main>
+        <div class="course-location">
+            <section class="coursework">
+                <h2>Course Work</h2>
+                <p>• JavaScript • GitHub  • HTML <br>• Python<br>• C#</p>
+            </section>
+
+            <section class="location">
+                <h2>Accra, Ghana</h2>
+                <img src="images/GhArc.jpg" alt="Independence Square">
+                <p>Independence Square</p>
+            </section>
         </div>
-      </section>
+
+        <section class="certificate">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="filter">
+                <button>All</button>
+                <button>CSE</button>
+                <button>WDD</button>
+            </div>
+            <div class="courses"></div>
+        </section>
     </main>
-  
-    
+
     <footer>
         <p>&copy; <span id="currentYear"></span> <br> Kingsley Kwarteng <br> Accra, Ghana </p>
         <p id="lastModified"></p>
     </footer>
+
+    <script src="scripts/index.js" defer></script>
 </body>
 </html>

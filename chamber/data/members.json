@@ -1,0 +1,65 @@
+[
+    {
+      "name": "Nkwwa Corp",
+      "address": "123 Main St, Awoshie Accra, Ghana",
+      "phone": "+233 233455556",
+      "website": "https://www.nkwacorp.com",
+      "logo": "https://media.istockphoto.com/id/1223763001/vector/vector-illustration-media-bubble-gradient-colorful-style.jpg?s=2048x2048&w=is&k=20&c=Z5GE8FgB8gjN2DON8v4B2JgFxa0LJ7ALIx58ntA-05M=",
+      "membershipLevel": 2,
+      "industry": "Manufacturing"
+    },
+    {
+      "name": "Silicon Tech Solutions Inc.",
+      "address": "555 Tech Way, Kumasi, Ghana",
+      "phone": "+233 534456890",
+      "website": "https://www.silicontechsolutions.com",
+      "logo": "https://media.istockphoto.com/id/1223762983/vector/vector-illustration-waves-gradient-colorful-style.jpg?s=2048x2048&w=is&k=20&c=AxB56eqAks1zn8a8AKOaf7tN5dIU8k7ip2Mv540jAKw=",
+      "membershipLevel": 3,
+      "industry": "Technology"
+    },
+    {
+      "name": "Forex Global Enterprises",
+      "address": "100 World Ave, Techiman, Ghana",
+      "phone": "+233 550067834",
+      "website": "https://www.forexglobalenterprises.com",
+      "logo": "https://media.istockphoto.com/id/1223763011/vector/vector-illustration-bubble-color-gradient-colorful-style.jpg?s=2048x2048&w=is&k=20&c=2nA9VqjxbqK4U6fRfid8pXlh_ffX1jLCI0c_KNCvyto=",
+      "membershipLevel": 1,
+      "industry": "Finance"
+    },
+    {
+      "name": "Creative Designs",
+      "address": "77 Art Lane, Accra, Ghana",
+      "phone": "+233 246789456",
+      "website": "https://www.creativedesigns.com",
+      "logo": "https://media.istockphoto.com/id/1163896543/vector/water-wave-symbol-and-icon-vector.jpg?s=2048x2048&w=is&k=20&c=kzHp496lQEM5ihXKIFAm851LGtcW8lcKjiOqJddH-QE=",
+      "membershipLevel": 2,
+      "industry": "Marketing"
+    },
+    {
+      "name": "Green Energy Solutions",
+      "address": "1 Solar Rd, Green City, Ghana",
+      "phone": "+233 903456213",
+      "website": "https://www.greenenergysolutions.com",
+      "logo": "https://media.istockphoto.com/id/1151066638/vector/letter-e-logo-design-vector-illustration.jpg?s=2048x2048&w=is&k=20&c=L8hu2VXzd6vKQciTEi2Gn6haWZ3wIjx9pDFKF8cUhmo=",
+      "membershipLevel": 1,
+      "industry": "Renewable Energy"
+    },
+    {
+      "name": "Innovative Health",
+      "address": "101 Wellness Dr, Kasoa, Ghana",
+      "phone": "+233 547890344",
+      "website": "https://www.innovativehealth.com",
+      "logo": "https://media.istockphoto.com/id/590038092/vector/number-nine-icon-with-atoms-orbits.jpg?s=2048x2048&w=is&k=20&c=Qo5XGtjA8q0GqN6ggfyMxCgsv5_XzT4jFCtM0H_FzPI=",
+      "membershipLevel": 3,
+      "industry": "Healthcare"
+    },
+    {
+      "name": "Global Transport",
+      "address": "45 Logistics Blvd, Winneba, Ghana",
+      "phone": "+233 589084321",
+      "website": "https://www.globaltransport.com",
+      "logo": "https://media.istockphoto.com/id/827386034/vector/creative-colorful-letter-e-design-symbol.jpg?s=2048x2048&w=is&k=20&c=Bh8YBcSk4JNkIZmNR3M_IUFUsJrgMM9tkXNTG0MVm4A=",
+      "membershipLevel": 2,
+      "industry": "Logistics"
+    }
+  ]

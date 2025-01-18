@@ -1,136 +1,195 @@
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f3f4f6;
-    color: #333;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-  
-  header {
-    background-color: #005f73;
-    color: white;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  header .profile img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto 10px;
-  }
-  
-  header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    padding: 5px;
-  }
 
-  header nav ul :hover{
-    background-color: black;
-    padding: 2px;
-  }
-  
-  header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  main {
-    padding: 20px;
-  }
-  
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f3f4f6;
+  color: #333;
+}
 
+header {
+  background-color: #005f73;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+header .profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 5px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header .hamburger {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+header .hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: all 0.3s;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+header nav ul :hover{
+  background-color: #299b9f;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  background-color: #f9f9f9;
+}
+
+.course-location {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 800px;
+}
+
+.course-location p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+.course-location img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+
+.course-location section {
+  flex: 1;
+}
+.course-location h2 {
+  font-size: 1.5rem;
+  color: #005f73;
+  margin-bottom: 10px;
+}
+
+
+.certificate {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+
+.certificate .filter,
+.certificate .courses {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #005f73;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #299b9f;
+}
+
+footer {
+  background-color: #005f73;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .course-location {
-    display: flex;
-    gap: 20px;
-    align-items: flex-start;
-    border: 1px solid #0f0c0c;
-    border-radius: 5px;
-    padding: 10px;
-  }
-  
-  .coursework {
-    flex: 1;
-  }
-  
-  .location {
-    flex: 1;
-    text-align: center;
-    
-  }
-  
-  .location img {
-    max-width: 100%;
-    height: auto;
-    margin: 10px 0;
-  }
-  
-  .certificate {
-    margin-top: 20px;
-    text-align: center;
-    border: 1px solid #0f0c0c;
-  }
-  
-  .certificate .filter,
-  .certificate .courses {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-    padding: 5px;
-  }
-
-  .filter :hover {
-    background-color: #0f0c0c;
-  }
-  
-  
-  button {
-    padding: 10px 15px;
-    border: none;
-    background-color: #005f73;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #299b9f;
-  }
-  
-  footer {
-    background-color: #005f73;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .course-location {
       flex-direction: column;
       gap: 20px;
-    }
-  
-    header nav ul {
+  }
+
+  header nav {
+      display: none;
       flex-direction: column;
       gap: 10px;
-    }
-  
-    .certificate .filter,
-    .certificate .courses {
-      flex-direction: column;
-      gap: 5px;
-    }
+      background-color: #005f73;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding: 20px 0;
   }
+
+  header .hamburger {
+      display: block;
+  }
+
+  header.nav-active nav {
+      display: flex;
+  }
+
+  header .hamburger.active div:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  header .hamburger.active div:nth-child(2) {
+      opacity: 0;
+  }
+
+  header .hamburger.active div:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+  }
+}
