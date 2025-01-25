@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chamber of Commerce - Home</title>
-    <meta name="description" content="WDD 231 - Web Frontend Development - Kingsley Kwarteng.">
+    <meta name="description" content="Welcome to Kingsley's Chamber of Commerce. Empowering local businesses in Ghana.">
     <meta name="author" content="Kingsley Kwarteng">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
@@ -13,8 +13,8 @@
     <!-- Open Graph -->
     <meta property="og:title" content="Chamber of Commerce - Home">
     <meta property="og:type" content="Website">
-    <meta property="og:image" content="images/GhArcjpg">
-    <meta property="og:url" content="https://kwamekingsley.github.io/wdd231/chamber/directory.html">
+    <meta property="og:image" content="images/GhArc.jpg">
+    <meta property="og:url" content="https://kwamekingsley.github.io/wdd231/chamber/index.html">
 
     <script src="scripts/chamber.js" defer></script>
 </head>
@@ -30,7 +30,7 @@
         </div>
         <nav>
             <ul class="navigation">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
@@ -39,32 +39,33 @@
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section class="hero">
-            <h2>Welcome to Kingsley's Chamber of Commerce</h2>
-            <p>Empowering local businesses and fostering community growth.</p>
-            <button>Keynote Tickets</button>
+            <img src="https://media.istockphoto.com/id/1952312091/photo/accra-skyline.jpg?s=2048x2048&w=is&k=20&c=ChIZ1op-uRGV4hH6NGVB21ZFOfy4gWCnhtOKnfhOSTM=" alt="Hero Image" class="hero-image">
+            <div class="hero-text">
+                <h2>Welcome to Kingsley's Chamber of Commerce</h2>
+                <p>Empowering local businesses and fostering community growth in Ghana.</p>
+                <a href="join.html" class="cta-button">Join Us Today</a>
+            </div>
         </section>
 
+        <!-- Weather Section -->
         <section class="weather">
             <div class="current-weather">
                 <h3>Current Weather</h3>
-                <p>78°F - Partly Cloudy</p>
-                <p>High: 85°F | Low: 52°F</p>
-                <p>Humidity: 34%</p>
-                <p>Sunrise: 7:30am | Sunset: 9:15pm</p>
+                <p id="temperature"></p>
+                <p id="description"></p>
             </div>
             <div class="weather-forecast">
-                <h3>Weather Forecast</h3>
-                <p>Today: 90°F</p>
-                <p>Wednesday: 89°F</p>
-                <p>Thursday: 68°F</p>
+                <h3>3-Day Forecast</h3>
+                <ul id="forecast"></ul>
             </div>
         </section>
 
-        <section class="directory">
-            <h2>Business Directory</h2>
-            <button id="toggleView">Switch to list view </button>
-            <div id="memberContainer" class="grid-view"></div>
+        <!-- Spotlight Section -->
+        <section class="spotlight">
+            <h2>Featured Businesses</h2>
+            <div id="spotlightContainer"></div>
         </section>
     </main>
 
@@ -77,7 +78,7 @@
         </div>
         <div class="social-media">
             <a href="https://twitter.com">
-            <img src="images/Xlogo.webp" alt="Twitter new logo X">
+                <img src="images/Xlogo.webp" alt="Twitter new logo X">
             </a>
             <a href="https://www.facebook.com/king.sley.395891">
                 <img src="images/Facebook.webp" alt="Facebook logo">

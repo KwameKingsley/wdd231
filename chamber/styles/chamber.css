@@ -67,12 +67,9 @@ nav ul li a:hover {
     padding: 2rem 1rem;
     background-color: #0066cc;
     color: white;
+    position: relative;
 }
 
-.hero h2 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-}
 
 .hero button {
     background-color: #004080;
@@ -85,19 +82,110 @@ nav ul li a:hover {
     margin-top: 1rem;
 }
 
-.hero button:hover {
-    background-color: #002850;
+.hero-image {
+    width: 100%;
+    height: 60vh; /* Adjust the height for a modern aspect ratio */
+    object-fit: cover; /* Ensure the image covers the entire area without distortion */
+    border-bottom: 5px solid #007BFF; /* Add a professional border at the bottom */
 }
 
-/* Weather Section */
+/* Hero Text Styling */
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* Place the text above the overlay */
+}
+.hero-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.current-weather h3 {
+    font-size: 1.8rem;
+    color: #007BFF; 
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.current-weather p {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0.5rem 0;
+}
+
+.weather-forecast h3 {
+    font-size: 1.6rem;
+    color: #007BFF;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.weather-forecast ul {
+    list-style-type: none;
+    padding: 0;
+}
+.weather-forecast li {
+    font-size: 1rem;
+    color: #555;
+    padding: 0.8rem;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+.weather-forecast li:last-child {
+    border-bottom: none;
+}
+
+
+
+.cta-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #121416; 
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button:hover {
+    background-color: wheat; 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+
+.cta-button:active {
+    background-color: #003f7f;
+    transform: translateY(0); 
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+}
+
+
 .weather {
     display: flex;
     justify-content: space-around;
-    padding: 1.5rem;
-    background-color: #e8f1fa;
     margin: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa; 
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Arial, sans-serif;
 }
 
 .weather div {
@@ -132,6 +220,58 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
+
+.spotlight {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+
+#spotlightContainer {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 1.5rem;
+}
+
+
+.featured-business {
+    width: 300px; 
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    text-align: left;
+}
+
+.featured-business img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.featured-business h3 {
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+}
+
+.featured-business p {
+    margin: 0.25rem 0;
+}
+
+.featured-business a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.featured-business a:hover {
+    text-decoration: underline;
+}
+
 /* Member Card */
 .member-card {
     background: #ffffff;
@@ -163,6 +303,13 @@ nav ul li a:hover {
     margin: 0.3rem 0;
 }
 
+div a{
+    color: black;
+    background-color: aliceblue;
+}
+.spotlight a {
+    color: black;
+}
 /* Footer Styles */
 footer {
     text-align: center;
