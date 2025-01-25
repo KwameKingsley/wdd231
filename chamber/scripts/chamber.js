@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to display members in the container
     function displayMembers(members) {
-        memberContainer.innerHTML = ''; // Clear the container
+        memberContainer.innerHTML = '';
         members.forEach((member) => {
             const memberCard = document.createElement('div');
             memberCard.classList.add('member-card');
@@ -69,11 +69,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Fetch and display members on page load
     fetchMemberData();
-    const currentYear = new Date().getFullYear();
-    document.getElementById("currentYear").textContent = currentYear;
-  
-    const lastModified = document.lastModified;
-    document.getElementById("lastModified").textContent = `Last Modified: ${lastModified}`;
 });
 
 // Select HTML elements for weather display
@@ -129,7 +124,6 @@ function displayWeatherForecast(data) {
     // Clear existing forecast data
     forecastContainer.innerHTML = '';
 
-    // Get 3 days of forecast data (every 8th item is approximately 24 hours apart in a 5-day forecast)
     const dailyForecasts = data.list.filter((_, index) => index % 8 === 0).slice(0, 3);
 
     dailyForecasts.forEach(forecast => {
@@ -163,12 +157,12 @@ async function fetchSpotlightData() {
         // Shuffle and select up to 3 members
         const selectedMembers = spotlightMembers.sort(() => 0.5 - Math.random()).slice(0, 3);
 
-        // Inside your fetchSpotlightData() function
+      
         const spotlightContainer = document.getElementById('spotlightContainer');
         spotlightContainer.innerHTML = '';
         selectedMembers.forEach(member => {
              const card = document.createElement('div');
-             card.classList.add('featured-business'); // Add the featured-business class
+             card.classList.add('featured-business');
              card.innerHTML = `
             <img src="${member.logo}" alt="${member.name} Logo">
             <h3>${member.name}</h3>
@@ -184,3 +178,9 @@ async function fetchSpotlightData() {
 }
 
 fetchSpotlightData();
+
+ const currentYear = new Date().getFullYear();
+    document.getElementById("currentYear").textContent = currentYear;
+  
+    const lastModified = document.lastModified;
+    document.getElementById("lastModified").textContent = `Last Modified: ${lastModified}`;
