@@ -7,7 +7,14 @@ document.addEventListener('DOMContentLoaded', () => {
     hamburger.addEventListener('click', () => {
         hamburger.classList.toggle('active');
         nav.classList.toggle('open');
-    })
+    });
+
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) {
+            nav.classList.remove('open');
+            hamburger.classList.remove('active');
+        }
+    });
 
     // Function to fetch member data
     async function fetchMemberData() {
@@ -60,9 +67,16 @@ document.addEventListener('DOMContentLoaded', () => {
             memberContainer.classList.remove('grid-view');
             memberContainer.classList.add('list-view');
             toggleViewButton.textContent = 'Switch to Grid View';
+            spotlightContainer.classList.contains('grid-view');
+            spotlightContainer.classList.remove('grid-view');
+            spotlightContainer.add('list-view');
+            toggleViewButton.textContent = 'Switch to List View';
         } else {
             memberContainer.classList.remove('list-view');
             memberContainer.classList.add('grid-view');
+            toggleViewButton.textContent = 'Switch to List View';
+            spotlightContainer.classList.remove('list-view');
+            spotlightContainer.classList.add('grid-view');
             toggleViewButton.textContent = 'Switch to List View';
         }
     });

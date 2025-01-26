@@ -30,6 +30,7 @@ header .logo h1 {
 nav {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 }
 
 nav ul.navigation {
@@ -337,18 +338,21 @@ footer .social-media a:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
     nav {
-        display: none;
+        display: none; /* Hide the navigation menu by default */
+        flex-direction: column;
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
-        background-color: #002850;
-        flex-direction: column;
-        align-items: center;
+        background-color: #004080; /* Match your header background color */
+        text-align: center;
         padding: 1rem 0;
+        z-index: 1000;
         transform: translateY(-100%);
+        opacity: 0;
         transition: transform 0.3s ease, opacity 0.3s ease;
     }
+
     .weather {
         flex-direction: column;
         gap: 1rem;
