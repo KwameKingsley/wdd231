@@ -157,10 +157,25 @@ button:hover {
 
 footer {
     text-align: center;
-    padding: 15px;
-    background: #007BFF;
+    padding: 1rem;
+    background-color: #004080;
     color: white;
-    margin-top: 20px;
+    margin-top: 2rem;
+}
+
+footer .contact-info p, 
+footer .social-media a {
+    margin: 0.5rem 0;
+}
+
+footer .social-media a {
+    color: white;
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+
+footer .social-media a:hover {
+    text-decoration: underline;
 }
 
 /* Responsive Design */

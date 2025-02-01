@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Join - Kingsley's Chamber of Commerce</title>
     <meta name="description" content="Join Kingsley's Chamber of Commerce and be part of a growing business community.">
+    <meta name="author" content="Kingsley Kwarteng">
+    <meta property="og:title" content="Chamber of Commerce - Home">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://kwamekingsley.github.io/wdd231/images/images/GhArc.jpg">
+    <meta property="og:url" content="https://kwamekingsley.github.io/wdd231/chamber/index.html">
+
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/join.css">
     <script src="scripts/join.js" defer></script>
+    <script src="scripts/getdate.js" defer></script>
 </head>
 <body>
     <header>
@@ -122,7 +129,25 @@
     </main>
 
     <footer>
-        <p>&copy; <span id="currentYear"></span> Kingsley's Chamber of Commerce</p>
+        <div class="contact-info">
+            <p>Kingsley's Chamber of Commerce</p>
+            <p>Awoshie, Accra Ghana</p>
+            <p>Email: <a href="mailto:Kwartkingsley@gmail.com">Kwartkingsley@gmail.com</a></p>
+            <p>Phone: +233 246-981-675</p>
+        </div>
+        <div class="social-media">
+            <a href="https://twitter.com">
+                <img src="images/Xlogo.webp" alt="Twitter new logo X">
+            </a>
+            <a href="https://www.facebook.com/king.sley.395891">
+                <img src="images/Facebook.webp" alt="Facebook logo">
+            </a>
+            <a href="https://www.linkedin.com/in/kwartkingsley">
+                <img src="images/linkedinwebp.webp" alt="LinkedIn logo">
+            </a>
+        </div>
+        <p>&copy; <span id="currentYear"></span> <br> Kingsley Kwarteng <br> Accra, Ghana </p>
+        <p id="lastModified"></p>
     </footer>
 </body>
 </html>
