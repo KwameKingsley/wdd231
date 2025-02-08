@@ -147,7 +147,10 @@ nav ul li a:hover {
     border-bottom: none;
 }
 
-
+main h2 {
+    text-align: center;
+    padding: 5px;
+}
 
 .cta-button {
     display: inline-block;
