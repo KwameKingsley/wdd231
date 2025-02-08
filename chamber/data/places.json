@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Kwame Nkrumah Mausoleum",
+        "address": "Accra, Ghana",
+        "description": "A memorial park dedicated to Ghana’s first president, Kwame Nkrumah.",
+        "image": "place1.webp.webp",
+        "url": "https://visitghana.com/attractions/kwame-nkrumah-memorial-park/"
+    },
+    {
+        "name": "Cape Coast Castle",
+        "address": "Cape Coast, Ghana",
+        "description": "A historic castle and museum that tells the story of the slave trade.",
+        "image": "place2.webp.webp",
+        "url": "https://visitghana.com/attractions/cape-coast-castle/"
+    },
+    {
+        "name": "Larabanga Mosque",
+        "address": "Northern Region",
+        "description": "The Larabanga Mosque is thought to be the oldest mosque in Ghana and West Africa",
+        "image": "larabanga3.webp",
+        "url": "https://visitghana.com/attractions/larabanga-mosque/"
+    },
+    {
+        "name": "Kakum National Park",
+        "address":"Cape Coast, Ghana",
+        "description": "Kakum National Park and Canopy Walkway that offers visitors spectacular scenery and a fascinating wildlife experience along with modern camping facilities. ",
+        "image": "kakum4.webp",
+        "url": "https://visitghana.com/attractions/kakum-national-park/"
+    },
+    {
+        "name": "Labadi Beach",
+        "address": "Accra, Ghana",
+        "description": "Ghana's finest beach for all vacations",
+        "image": "labadi5.webp",
+        "url": "https://www.tripadvisor.com/Attraction_Review-g293797-d1469182-Reviews-Labadi_Pleasure_Beach-Accra_Greater_Accra.html"
+    },
+    {
+        "name": "Nzulenzu Village",
+        "address": "Central Region",
+        "description": "The only village in Ghana situated on a river",
+        "image": "nzulenzu6.webp",
+        "url": "https://visitghana.com/attractions/nzulezu-stilt-village/"
+    },
+    {
+        "name": "Mole National Park",
+        "address": "Northern Region",
+        "description": "A zoo with all the wildlife in the forest",
+        "image": "mole7.webp",
+        "url": "https://visitghana.com/attractions/mole-national-park-2/"
+    },
+    {
+        "name": "Boti Falls",
+        "address": "Eastern Region",
+        "description": "Boti falls is a twin waterfall located at Boti in the Eastern Region of Ghana. Boti falls takes its course from a river known locally as Ponmpon.",
+        "image": "botifalls8.webp",
+        "url": "https://visitghana.com/attractions/boti-falls-1/"
+    }
+]
