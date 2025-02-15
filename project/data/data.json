@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Zipline Adventure",
+        "description": "Experience an adrenaline rush on our exciting zipline course.",
+        "price": "$25 per person",
+        "image": "images/ziplining.webp"
+    },
+    {
+        "name": "Kayaking",
+        "description": "Enjoy a peaceful kayaking experience on the river.",
+        "price": "$15 per hour",
+        "image": "images/kayaking.webp"
+    },
+    {
+        "name": "Mountain Hiking",
+        "description": "Explore scenic trails with guided hikes.",
+        "price": "$20 per trip",
+        "image": "images/hike.webp"
+    },
+    {
+        "name": "Quad Biking",
+        "description": "Feel nature on a quad biking experience",
+        "price": "$15 per hour",
+        "image": "images/biking.webp"
+    },
+    {
+        "name": "Archery",
+        "description": "Learn how to hit the bull's eye in archery",
+        "price":"$15 per hour",
+        "image": "images/archery.jpg"
+    },
+    {
+        "name": "Horse Riding",
+        "description": "Learn how to ride a horse",
+        "price": "$20 per section",
+        "image": "images/horse.jpg"
+    },
+    {
+        "name": "Painting",
+        "description": "Brainstrom from your mind's eye through painting",
+        "price":"$10 per section",
+        "image": "images/painting.jpg"
+    }
+]

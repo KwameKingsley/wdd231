@@ -1,0 +1,500 @@
+/* ======= Global Styles ======= */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+    color: #333;
+}
+
+h1, h2 {
+    color: blue;
+    margin-bottom: 10px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+
+#activity-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin: 1rem;
+    animation: fadeIn 1s ease-in-out;
+    padding: 5px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: white;
+    position: relative;
+}
+
+
+.hero button {
+    background-color: #004080;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.hero-image {
+    width: 100%;
+    height: 60vh; 
+    object-fit: cover; 
+    border-bottom: 5px solid #007BFF; 
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Hero Text Styling */
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.hero-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #121416; 
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button:hover {
+    background-color: wheat; 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+
+.cta-button:active {
+    background-color: #003f7f;
+    transform: translateY(0); 
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+}
+
+.current-weather h3 {
+    font-size: 1.8rem;
+    color: #007BFF; 
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.current-weather p {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0.5rem 0;
+}
+
+.weather-forecast h3 {
+    font-size: 1.6rem;
+    color: #007BFF;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.weather-forecast ul {
+    list-style-type: none;
+    padding: 0;
+}
+.weather-forecast li {
+    font-size: 1rem;
+    color: #555;
+    padding: 0.8rem;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+.weather-forecast li:last-child {
+    border-bottom: none;
+}
+
+/* ======= Navigation ======= */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0077b6;
+    padding: 15px 20px;
+    position: relative;
+    z-index: 100;
+}
+
+nav h1 {
+    color: #fff;
+    font-size: 24px;
+}
+
+/* Nav Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s ease-in-out;
+}
+.nav-links :active {
+    text-decoration: underline;
+}
+
+.nav-links a:hover {
+    color: #ffdd57;
+}
+
+/* Animation for Featured Activities */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animation to featured activities */
+#featured-activities {
+    animation: fadeIn 1s ease-in-out;
+    text-align: center;
+}
+
+/* Horizontal layout for featured activities */
+.activity-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Styling for activity cards */
+.activity-card {
+    width: 200px;
+    text-align: center;
+}
+
+.activity-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* ======= Hamburger Menu ======= */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+#featured-activities {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+#featured-activities img {
+    flex-grow: 1;
+    flex-basis: 200px;
+    max-width: 100%;
+    height: auto;
+}
+/* ======= Card Styles ======= */
+.card {
+    background: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+}
+
+.modal-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* ======= Form Styles ======= */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px 0;
+    max-width: 400px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #155abc;
+}
+
+input, select, button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #004080;
+    color: white;
+    margin-top: 2rem;
+}
+footer img {
+    width: 25px;
+}
+
+footer .contact-info p, 
+footer .social-media a {
+    margin: 0.5rem 0;
+}
+
+footer .social-media a {
+    color: white;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    background-color: aliceblue;
+}
+
+footer .social-media a:hover {
+    text-decoration: underline;
+}
+footer .contact-info a {
+    background-color: aliceblue;
+}
+
+
+/* ======= Navigation ======= */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0077b6;
+    padding: 15px 20px;
+    position: relative;
+    z-index: 100; /* Ensure it stays above other elements */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #ffdd57;
+}
+
+/* ======= Hamburger Menu ======= */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    width: 20px;
+    height: 4px;
+    background: #fff;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+        background: #0077b6;
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+        transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    .nav-links a {
+        display: block;
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Show menu when active */
+    .nav-links.active {
+        max-height: 300px; /* Adjust based on number of items */
+        opacity: 1;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    /* Hamburger Animation */
+    .hamburger.active .line:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+    .hamburger.active .line:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .line:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero button {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+    .nav-links a {
+        display: block;
+        width: 100%;
+        padding: 10px;
+    }
+}
