@@ -16,6 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function displayActivities(activities) {
+        activityGrid.innerHTML = "";
+
         activities.forEach(activity => {
             const card = document.createElement("div");
             card.classList.add("activity-card");
@@ -25,7 +27,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 <h3>${activity.name}</h3>
                 <p>${activity.description}</p>
                 <p><strong>Price:</strong> ${activity.price}</p>
-                <button class="details-btn" data-name="${activity.name}" data-desc="${activity.description}" data-price="${activity.price}" data-image="${activity.image}">View Details</button>
+                <button class="details-btn" 
+                    data-name="${activity.name}" 
+                    data-desc="${activity.description}" 
+                    data-price="${activity.price}" 
+                    data-image="${activity.image}">View Details
+                </button>
             `;
 
             activityGrid.appendChild(card);
@@ -35,23 +42,32 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function setupModal() {
-        const modal = document.createElement("div");
-        modal.id = "activity-modal";
-        modal.classList.add("modal");
-        modal.innerHTML = `
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <img id="modal-image" src="" alt="">
-                <h2 id="modal-title"></h2>
-                <p id="modal-description"></p>
-                <p id="modal-price"></p>
-            </div>
-        `;
-        document.body.appendChild(modal);
-
+        let modal = document.getElementById("activity-modal");
+    
+        if (!modal) {
+            modal = document.createElement("div");
+            modal.id = "activity-modal";
+            modal.classList.add("modal");
+            modal.innerHTML = `
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img id="modal-image" src="" alt="">
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-description"></p>
+                    <p id="modal-price"></p>
+                </div>
+            `;
+            document.body.appendChild(modal);
+        }
+    
         const closeModal = modal.querySelector(".close");
-        closeModal.addEventListener("click", () => modal.style.display = "none");
-
+    
+        // Close modal when clicking the close button
+        closeModal.addEventListener("click", () => {
+            modal.style.display = "none";
+        });
+    
+        // Attach event listeners to dynamically created buttons
         document.querySelectorAll(".details-btn").forEach(button => {
             button.addEventListener("click", event => {
                 const { name, desc, price, image } = event.target.dataset;
@@ -63,22 +79,28 @@ document.addEventListener("DOMContentLoaded", () => {
                 modal.style.display = "block";
             });
         });
+    
+        // Close modal when clicking outside the content
+        modal.addEventListener("click", event => {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        });
     }
 
     fetchActivities();
 });
 
+// Navigation menu toggle
 document.addEventListener("DOMContentLoaded", () => {
     const hamburger = document.querySelector(".hamburger");
     const navLinks = document.querySelector(".nav-links");
 
-    // Toggle navigation menu
     hamburger.addEventListener("click", () => {
         hamburger.classList.toggle("active");
         navLinks.classList.toggle("active");
     });
 
-    // Close menu when window resizes to larger screens
     window.addEventListener("resize", () => {
         if (window.innerWidth > 768) {
             navLinks.classList.remove("active");
